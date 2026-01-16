@@ -1,1 +1,38 @@
-first commit
+# Wordle
+
+This project is a simple Wordle-style game developed with Angular.
+The goal of the game is to guess a target word within a limited number of attempts, receiving visual feedback for each guess.
+The application is composed of a single game screen, where the player defines a target value and starts making guesses.
+:iphone: This application is responsive and supports mobile devices.
+
+
+# Environment Configuration:
+- Clone the repository
+- Install the dependencies by running npm install
+- Run ng serve command to initialize the application
+- Open the browser and navigate to http://localhost:4200/test
+
+# Project Features:
+
+- Target value setup:
+Before starting the game, the user must define a target value, which represents the word to be guessed.
+
+- Word guessing:
+After setting the target value, the user can start typing guesses. Each guess must have the correct word length.
+If the submitted word is incomplete, the game will display a “word too short” message.
+
+- Color feedback system:
+After submitting a guess, each letter receives visual feedback:
+
+🟩 Green: the letter is correct and in the correct position.
+
+🟨 Yellow: the letter exists in the target word but is in the wrong position.
+
+⬜ Gray: the letter does not exist in the target word.
+
+- Game status:
+
+The game indicates when the player wins by guessing the correct word.
+
+The game indicates when the player loses after reaching the maximum number of attempts.
+
