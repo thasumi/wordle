@@ -3,8 +3,6 @@
 This project is a simple Wordle-style game developed with Angular.
 The goal of the game is to guess a target word within a limited number of attempts, receiving visual feedback for each guess.
 The application is composed of a single game screen, where the player defines a target value and starts making guesses.
-:iphone: This application is responsive and supports mobile devices.
-
 
 # Environment Configuration:
 - Clone the repository
