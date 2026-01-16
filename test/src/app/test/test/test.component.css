@@ -1,0 +1,52 @@
+.wordle-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+ 
+.word-row {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+}
+
+.letter-input {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #3a3a3c;
+  background-color: #cacae0;
+  color: white;
+}
+
+.letter-input:focus {
+  outline: none;
+  border-color: #565758;
+}
+
+.letter-input.green {
+  background-color: #538d4e;
+  border-color: #538d4e;
+}
+
+
+.letter-input.yellow {
+  background-color: #b59f3b;
+  border-color: #b59f3b;
+}
+
+.letter-input.grey {
+  background-color: #3a3a3c;
+  border-color: #3a3a3c;
+}
+
+
+input:disabled {
+  cursor: default;
+  opacity: 1;
+}

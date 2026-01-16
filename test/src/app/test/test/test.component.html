@@ -1,0 +1,12 @@
+<div>
+    <input type="text" [(ngModel)]="target" maxlength="5" placeholder="input the target word">
+</div>
+<div class="wordle-grid">
+    <div *ngFor="let row of grid; let i = index; trackBy: trackRow" class="word-row">
+        <input *ngFor="let cell of row; let j = index; trackBy: trackCol" type="text" maxlength="1"
+            [id]="getCellId(i, j)" [value]="grid[i][j]" (input)="setCellValue($event, i, j)"
+            [disabled]="i !== currentRow || !target || gameOver" class="letter-input" [ngClass]="results[i][j] || ''"
+            (keydown.enter)="onEnter(i, j)" />
+
+    </div>
+</div>
